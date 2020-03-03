@@ -1,0 +1,5 @@
+editopgraph/
+projects/*
+
+!projects/editopgraph.vcxproj
+!projects/editopgraph.vcxproj.filters

@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="dataset">
+      <UniqueIdentifier>{814bf743-dd41-4fb2-946b-c23c573c3403}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="components">
+      <UniqueIdentifier>{e3d14669-4692-4669-bdc2-e749bbe76773}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tools">
+      <UniqueIdentifier>{808c8869-83f6-4b9f-b1d2-6f1a77ae0d79}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dataset\component">
+      <UniqueIdentifier>{9c57b096-5d51-4bc1-abf8-40ac8d039bef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dataset\param">
+      <UniqueIdentifier>{aa4b2219-5a86-4074-b3e5-1c89841cebcc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="components\io">
+      <UniqueIdentifier>{040c37a2-7e43-49ad-8495-178db563a30c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tools\rtti">
+      <UniqueIdentifier>{130a13b2-42e9-4bd5-82b8-8f87663040a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="components\math">
+      <UniqueIdentifier>{188222bc-0558-4d50-9fe6-5621d6861105}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\include\editopgraph\Component.h">
+      <Filter>dataset\component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\editopgraph\Param.h">
+      <Filter>dataset\param</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\editopgraph\ParamImpl.h">
+      <Filter>dataset\param</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\editopgraph\ParamType.h">
+      <Filter>dataset\param</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\editopgraph\typedef.h" />
+    <ClInclude Include="..\..\..\include\editopgraph\component\Context.h">
+      <Filter>components\io</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\editopgraph\component\Context.parm.h">
+      <Filter>components\io</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\editopgraph\component\Operation.h">
+      <Filter>components\io</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\editopgraph\component\Operation.parm.h">
+      <Filter>components\io</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\editopgraph\comp_include_gen.h">
+      <Filter>tools\rtti</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\editopgraph\comp_regist_cfg.h">
+      <Filter>tools\rtti</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\editopgraph\comp_rttr_gen.h">
+      <Filter>tools\rtti</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\editopgraph\EditOpGraph.h" />
+    <ClInclude Include="..\..\..\include\editopgraph\component\Ray.h">
+      <Filter>components\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\editopgraph\component\Ray.parm.h">
+      <Filter>components\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\editopgraph\component\Plane.h">
+      <Filter>components\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\editopgraph\component\Plane.parm.h">
+      <Filter>components\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\editopgraph\CompHelper.h">
+      <Filter>tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\editopgraph\Context.h">
+      <Filter>dataset</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\editopgraph\component\RayPlaneIntersect.h">
+      <Filter>components\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\editopgraph\component\RayPlaneIntersect.parm.h">
+      <Filter>components\math</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\source\component\Operation.cpp">
+      <Filter>components\io</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\component\Context.cpp">
+      <Filter>components\io</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\RegistRTTR.cpp">
+      <Filter>tools\rtti</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\EditOpGraph.cpp" />
+    <ClCompile Include="..\..\..\source\component\Ray.cpp">
+      <Filter>components\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\component\Plane.cpp">
+      <Filter>components\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\CompHelper.cpp">
+      <Filter>tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\component\RayPlaneIntersect.cpp">
+      <Filter>components\math</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\include\editopgraph\CompHelper.inl">
+      <Filter>tools</Filter>
+    </None>
+  </ItemGroup>
+</Project>

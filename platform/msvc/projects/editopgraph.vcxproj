@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\include\editopgraph\CompHelper.h" />
+    <ClInclude Include="..\..\..\include\editopgraph\Component.h" />
+    <ClInclude Include="..\..\..\include\editopgraph\component\Context.h" />
+    <ClInclude Include="..\..\..\include\editopgraph\component\Context.parm.h" />
+    <ClInclude Include="..\..\..\include\editopgraph\component\Operation.h" />
+    <ClInclude Include="..\..\..\include\editopgraph\component\Operation.parm.h" />
+    <ClInclude Include="..\..\..\include\editopgraph\component\Plane.h" />
+    <ClInclude Include="..\..\..\include\editopgraph\component\Plane.parm.h" />
+    <ClInclude Include="..\..\..\include\editopgraph\component\Ray.h" />
+    <ClInclude Include="..\..\..\include\editopgraph\component\Ray.parm.h" />
+    <ClInclude Include="..\..\..\include\editopgraph\component\RayPlaneIntersect.h" />
+    <ClInclude Include="..\..\..\include\editopgraph\component\RayPlaneIntersect.parm.h" />
+    <ClInclude Include="..\..\..\include\editopgraph\comp_include_gen.h" />
+    <ClInclude Include="..\..\..\include\editopgraph\comp_regist_cfg.h" />
+    <ClInclude Include="..\..\..\include\editopgraph\comp_rttr_gen.h" />
+    <ClInclude Include="..\..\..\include\editopgraph\Context.h" />
+    <ClInclude Include="..\..\..\include\editopgraph\EditOpGraph.h" />
+    <ClInclude Include="..\..\..\include\editopgraph\Param.h" />
+    <ClInclude Include="..\..\..\include\editopgraph\ParamImpl.h" />
+    <ClInclude Include="..\..\..\include\editopgraph\ParamType.h" />
+    <ClInclude Include="..\..\..\include\editopgraph\typedef.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\source\CompHelper.cpp" />
+    <ClCompile Include="..\..\..\source\component\Context.cpp" />
+    <ClCompile Include="..\..\..\source\component\Operation.cpp" />
+    <ClCompile Include="..\..\..\source\component\Plane.cpp" />
+    <ClCompile Include="..\..\..\source\component\Ray.cpp" />
+    <ClCompile Include="..\..\..\source\component\RayPlaneIntersect.cpp" />
+    <ClCompile Include="..\..\..\source\EditOpGraph.cpp" />
+    <ClCompile Include="..\..\..\source\RegistRTTR.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\include\editopgraph\CompHelper.inl" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>editopgraph</ProjectName>
+    <ProjectGuid>{017820DF-68C9-41CE-9860-078EDD5BC203}</ProjectGuid>
+    <RootNamespace>editopgraph</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>15.0.26730.12</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>..\editopgraph\x86\Debug\</OutDir>
+    <IntDir>..\editopgraph\x86\Debug\obj\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>..\editopgraph\x86\Release\</OutDir>
+    <IntDir>..\editopgraph\x86\Release\obj\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\cu\src;..\..\..\..\sm\src\sm;..\..\..\..\memmgr\include;..\..\..\..\guard\include;..\..\..\..\dag\include;..\..\..\..\painting0\include;..\..\..\..\painting3\include;..\..\..\..\easyeditor0\include;..\..\..\..\external\boost\include;..\..\..\..\external\rttr\include</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;_CRT_SECURE_NO_WARNINGS;NOISE_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <AdditionalOptions>/bigobj %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\cu\src;..\..\..\..\sm\src\sm;..\..\..\..\memmgr\include;..\..\..\..\guard\include;..\..\..\..\dag\include;..\..\..\..\painting0\include;..\..\..\..\painting3\include;..\..\..\..\easyeditor0\include;..\..\..\..\external\boost\include;..\..\..\..\external\rttr\include</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;_CRT_SECURE_NO_WARNINGS;NOISE_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <AdditionalOptions>/bigobj %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
